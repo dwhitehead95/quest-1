@@ -1,7 +1,7 @@
 FROM node:10
 WORKDIR /usr/src/app
-COPY package*.json ./
+COPY package.json ./
 RUN npm i
 COPY . .
 EXPOSE 3000
-CMD [ "node", "000.js" ]
+CMD [ "node", "src/000.js" ]
